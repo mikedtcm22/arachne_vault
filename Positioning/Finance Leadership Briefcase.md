@@ -1,12 +1,14 @@
 ---
-title: Finance Leadership Briefcase
-type: positioning
+created: '2026-06-08'
 pillar: Arachne Intelligence
 status: active
-tags: [positioning, briefcase, resfrac]
-created: 2026-06-08
+tags:
+  - positioning
+  - briefcase
+  - resfrac
+title: Finance Leadership Briefcase
+type: positioning
 ---
-
 # Finance Leadership Briefcase
 
 Up: [[Arachne Intelligence]]
@@ -20,6 +22,9 @@ A suite of screenshare-ready strategic memos built for the [[ResFrac Candidacy]]
   2. Scaling GTM beyond Mark & Garrett (distinctive metrics: **founder-time displacement**, **pair-composition win rates**).
   3. **AI Integration Roadmap** (copilot → supervised autonomy → new capabilities, safety foregrounded).
 - Carried by the **v2.0 GAAP projections model** (rebuilt for iteration post-Banneker-close).
+
+## Case studies
+- [[Waterfall Pricing Case Study]] — the cost-driver → value-driver pricing precedent behind the Pricing Design suite (Memo 3c).
 
 ## Style directives
 Lead with the positive thesis before any contrast; avoid "not X, it's Y" unless the contrast carries real weight; no strawman comparison framing.
