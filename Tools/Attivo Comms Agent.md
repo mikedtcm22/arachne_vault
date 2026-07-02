@@ -10,14 +10,6 @@ tags:
 title: Attivo Comms Agent
 type: tool
 ---
-ated: 2026-06-08
-pillar: Arachne Intelligence
-status: active
-tags: [tool, ai, email, aca]
-title: Attivo Comms Agent
-type: tool
----
-
 # Attivo Comms Agent
 
 Up: [[Arachne Intelligence]]
