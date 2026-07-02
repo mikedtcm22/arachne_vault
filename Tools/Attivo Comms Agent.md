@@ -10,6 +10,14 @@ tags:
 title: Attivo Comms Agent
 type: tool
 ---
+ated: 2026-06-08
+pillar: Arachne Intelligence
+status: active
+tags: [tool, ai, email, aca]
+title: Attivo Comms Agent
+type: tool
+---
+
 # Attivo Comms Agent
 
 Up: [[Arachne Intelligence]]
@@ -34,10 +42,16 @@ The generalized prediction rules the eval loop has surfaced (individual dated le
 - **Open-period reporting.** For as-of / period-end deliverables whose period hasn't closed, my same-day reply is a scope-and-timing acknowledgment proposing a post-close working session, not an execution commitment.
 - **Weekday holiday ≠ weekend.** On a holiday/OOO, reactive threads stay no-response, but proactive/self-directed work tied to a named focus block still ships.
 - **Enumeration rule.** A directly-addressed message from a named decision-maker with a concrete question or deadline keyword is always HIGH / respond-today and must be enumerated — never auto-filtered as noise. The morning scan should also surface recent live-meeting (MOR/board) commitments, not just open email threads.
+- **Automated-digest immunity — and why it holds.** Platform task/payroll digests (e.g. Rippling) are FYI-only template noise, not tasks I own — even when they carry "[ACTION REQUIRED]," "overdue," or a stated same-day deadline. Predict no-response at HIGH confidence and never fork to forward-to-team on these, regardless of urgency language in the subject/body, unless I or a named teammate is the explicit responsible approver on that entity. The real driver is scope, not urgency: most of these are out-of-scope-of-engagement calls. If I'm not responding to or forwarding a Rippling item for a given client (e.g. DeepScribe payroll administration), it's because that function sits outside Attivo's engagement scope for that client altogether — I'm cc'd purely as an FYI, and no follow-up is expected. Read "confidence" on these predictions as a scope question first, not a calibration question.
+
+## Proactive-send patterns
+The rules above are all reactive — predicting responses to inbound mail. This is a separate axis: predicting *unprompted* sends.
+- **Proactive-build forcing function.** On days with a strategic-finance/FP&A focus block for a given client — especially Fridays — expect an unprompted, client-facing BUILD deliverable (a model, a pricing tool, even a prototype web asset) to ship same-day to that client's exec/GTM contacts, independent of any inbound trigger. Surface it as a candidate proactive send during the morning scan, rather than folding it into the day's no-response defaults.
 
 ## Open threads
 - Track prediction accuracy / eval over time.
 - Build the **improvement layer**: turn each learned habit into a suggested better-practice, working toward the Phase-2 AI-powered communication cadence.
 - Decide how far to extend it beyond triage.
+- **Learning-loop reliability gap (open, in progress).** `learnings/accumulated.md` doesn't persist across ephemeral morning/evening session containers — evening runs write lessons to Open Brain + Drive but the repo commit doesn't push — so morning runs periodically reset to "first run" and repeat mistakes the loop already corrected (a scored miss on 6/29, a near-miss on 6/25). Fix in progress: (a) backfill + commit `accumulated.md` from Open Brain, (b) point the morning routine at Open Brain semantic search as the system of record and forbid the "empty learnings" self-declaration when Open Brain holds prior [ACA] lessons, (c) ensure evening runs commit + push every time. Close this out after two consecutive clean mornings.
 
-*Lineage: distilled from the `[ACA] Lesson` cluster in Open Brain (6/10–6/23), via the 2026-06-24 dream.*
+*Lineage: distilled from the `[ACA] Lesson` cluster in Open Brain (6/10–6/23), via the 2026-06-24 dream; extended with the 6/24–6/30 cluster (automated-digest/scope rule, proactive-send axis, learning-loop reliability gap) via the 2026-07-01 dream.*
