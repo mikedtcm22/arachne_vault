@@ -15,17 +15,17 @@ Run-to-run record of the Open Brain → Vault consolidation ("the Dream"). See [
 
 ## 2026-07-01 — second run
 - **Window:** 2026-06-24 → 2026-07-01.
-- **Artifact:** `2026-07-01 — Dream.md` (DREAMS folder, local My Drive mount under `(ARACHNE FINANCE)/DREAMS`) — pending review.
-- **Note:** this run also established the DREAMS folder at this path for the first time (it didn't exist here yet, distinct from the 2026-06-24 artifact's location); nothing was found to carry forward.
-- **Candidates:** 0 new-note · 4 extend · 0 link · 1 tension. All targeting [[Attivo Comms Agent]]:
-  - Extend → automated-digest/notification immunity rule (Rippling FYI-only pattern)
-  - Extend → "importance isn't urgency" no-hard-ask document-delivery rule
-  - Extend → proactive-build forcing-function axis (Friday/MOR self-initiated sends)
-  - Extend → learning-loop reliability gap status (accumulated.md persistence bug)
-  - Tension → whether the recurring Rippling confidence-calibration miss is the same root cause as the reliability gap, or separate
+- **Artifact:** `2026-07-01 — Dream.md` (DREAMS folder, My Drive under `(ARACHNE FINANCE)/DREAMS`) — **integrated**.
+- **Note:** this run also established the DREAMS folder at this path for the first time; nothing was found to carry forward.
+- **Decisions:** C1 approve · C2 reject · C3 approve · C4 approve · C5 edit (Michael reframed the tension as a scope-of-engagement clarification, merged into C1).
+- **Integrated into [[Attivo Comms Agent]]:**
+  - Extended "Learned behavior model" → automated-digest immunity rule, enriched with Michael's scope-of-engagement rationale (C1 + C5 merged)
+  - Rejected → "importance isn't urgency" document-delivery rule (C2, not added)
+  - Extended → new "Proactive-send patterns" section with the proactive-build forcing-function axis (C3)
+  - Extended "Open threads" → learning-loop reliability gap status (C4)
+  - Commits: [dd12407](https://github.com/mikedtcm22/arachne_vault/commit/dd124075ccc57db34d7496f033d7b0c9ed03f30e) (log), [a49673a](https://github.com/mikedtcm22/arachne_vault/commit/a49673ad615d31034932ac8a816f0ce54c85427d) (Attivo Comms Agent, final)
 - **Held outside (Arachne boundary):** autobiographical-playlist philosophical cluster (10 OB thoughts, 6/30) — personal self-understanding work, not a system/playbook; D&D "Embers of the Gathering Hollows" style rule → Mercer Falls vault, not here.
-- **Already reflected, no action:** OB 2026-06-25 restating ACA's improvement-lens purpose — already captured in [[Attivo Comms Agent]] via the prior dream.
-- **Open Brain capture-back:** none this run (Movement 1 only).
+- **Open Brain capture-back:** 1 proposed (Michael's scope-of-engagement reframing of the Rippling confidence question) — pending his confirm.
 - **Next window starts:** 2026-07-01.
 
 ## 2026-06-24 — first run
