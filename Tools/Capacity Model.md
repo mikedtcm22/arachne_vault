@@ -17,7 +17,9 @@ Up: [[Attivo Comms Agent]]
 
 The compounding artifact behind the ACA v4 scheduler. It answers one question: **how much work will actually survive a day, and where in the day does each kind of work survive?**
 
-> ⚠️ **PARTLY MEASURED.** Seeded 2026-09-21 from the priors in the v4 spec §6. **Measurements from five days — 2026-09-22, 23, 24, 25 and 28, 20 scoreable blocks** — are marked below; everything unmarked is still a guess recorded so it can be falsified. **2026-09-28 reversed the model's strongest claim at n=5, which is the clearest evidence yet that four days is enough to find a split and not enough to trust one.**
+> ⚠️ **PARTLY MEASURED.** Seeded 2026-09-21 from the priors in the v4 spec §6. **Measurements from six days — 2026-09-22, 23, 24, 25, 28 and 29, 26 scoreable blocks** — are marked below; everything unmarked is still a guess recorded so it can be falsified.
+>
+> ⚠️ **THREE CONSECUTIVE DAYS HAVE NOW FALSIFIED A CLAIM FITTED AT n≤5 ON ITS FIRST OUT-OF-SAMPLE TEST** — 9/28 the production rule, 9/29 both the narrowed production form and the title axis. **That sequence is the most robust finding in this note and it is about the loop, not about Michael. Stop promoting four- and five-day splits to rules.**
 
 **What this note is.** Only the congealed structure — current parameter values and the rules they imply. It is integrated, maintained and small. It is **not a log**: nightly observations are atomic and stay in [[Open Brain]] as `[ACA-PLAN]` thoughts.
 
@@ -31,15 +33,18 @@ The compounding artifact behind the ACA v4 scheduler. It answers one question: *
 
 | Day | Minutes survival | Flags cleared | Outbound artifacts | Verdict |
 |---|---|---|---|---|
-| 2026-09-22 | 68.8% | 0 of 8 | — | highest survival, lowest output |
+| 2026-09-22 | 68.8% | 0 of 8 | — | high survival, lowest output |
 | 2026-09-23 | 30.4% | **2 of 8**, both top-ranked | 2 emails | better than 9/22 |
-| 2026-09-24 | 16.7% | 2 of 16, one red | **2 emails + 5 Slack + 1 Doc** | **highest output measured** |
-| 2026-09-25 | 26.7% | **3 of 12** (Carrie, Pilot books, Kestrel) | 1 email + 1 Slack DM + 255 min new commitment | mid on both |
-| 2026-09-28 | **56.5%** | 2 of 14 (Jennifer ×2) | **1 email + 0 Slack**, 330 min on one client thread | high survival, thin output, **two red deadlines untouched for a 7th day** |
+| 2026-09-24 | 16.7% | 2 of 16, one red | 2 emails + 5 Slack + 1 Doc | worst survival, strong output |
+| 2026-09-25 | 26.7% | **3 of 12** | 1 email + 1 Slack DM + 255 min new commitment | mid on both |
+| 2026-09-28 | 58.3% | 2 of 14 | 1 email + 0 Slack, 330 min on one client thread | high survival, thin output, **two red deadlines untouched for a 7th day** |
+| **2026-09-29** | **71.4%** | **3 of 18** + 4 staleness clocks reset | **5 emails + 1 Slack** | ⚠️ **the best day on BOTH axes at once** |
 
 **A plan displaced by more urgent work of the same client is a successful displacement and must not train the scheduler toward smaller plans.** A day can be almost entirely unplanned and still be the most productive one measured. **Always report clearance and artifacts alongside survival.**
 
-⚠️ **And the converse, new on 9/28: a high-survival day is not a good day either.** 56.5% survival was the second-best figure in the corpus, on a day whose only outbound artifact was one email, whose two generic-titled blocks both rolled, and on which the 9/30-dated audit backup took zero minutes for the seventh consecutive day.
+⚠️ **9/28's warning — "a high-survival day is not a good day either" — is now bounded rather than general.** On 9/29 the two axes agreed for the first time: highest survival AND highest output. The honest reading at n=6 is that **survival and output are uncorrelated, not anti-correlated.** Neither predicts the other; both must be reported.
+
+⚠️ **And neither predicts the deadline.** On the best day ever measured, the 9/30-dated Mixmax audit backup took zero minutes for the **ninth** consecutive day. **A good day and a day that clears its deadlines are different things, and only the flag list tracks the second.**
 
 ## 1. What each number actually means
 
@@ -50,11 +55,11 @@ The compounding artifact behind the ACA v4 scheduler. It answers one question: *
 | `3` | 165 | — | 0 | — |
 | `4` | not schedulable | n/a | n/a | decompose marker, not a size |
 
-Tags are readable only through Asana, unavailable on all **twelve** runs to date. **Nothing in §1 can move until the connector is authorised.**
+Tags are readable only through Asana, unavailable on all **fourteen** runs to date. **Nothing in §1 can move until the connector is authorised.**
 
-**Adjacent measurement that does not need tags** (n = 3): **externally-organised meetings run 121.7% of their booked minutes** — Kestrel 40 against 30, DeepScribe×Tabs 61 against 60, Attivo×Mixmax 45 against 30. Pooled 146 of 120. **Treat a counterparty's booking as a floor, not a box — and expect the overrun to cascade.** On 9/25 a 15-minute extension pushed two downstream blocks 1h45m later.
+**Adjacent measurement that does not need tags** (n = 4): **externally-organised meetings run 100.6% of their booked minutes** — Kestrel 40/30, DeepScribe×Tabs 61/60, Attivo×Mixmax 45/30, **Attivo×ResFrac 15/40**. Pooled 161 of 160.
 
-⚠️ *Not* revised on 9/28. The 12:15 Kestrel sync's Fireflies recap arrived at 12:28:59, implying ~14 of 15 booked minutes (93%) — the first sub-100% observation. **Recap-email latency has never been calibrated**, so the recap timestamp is not a meeting-end timestamp and this observation is too weak to move a three-point figure. Recorded, not merged.
+⚠️ **"TREAT A COUNTERPARTY'S BOOKING AS A FLOOR" IS WITHDRAWN** (2026-09-29(G)). It rested on three points that happened to agree. The 9/29 ResFrac check-in was booked 12:00–12:40 and shortened to 12:00–12:15 inside Michael's own log-burst — a record of what the meeting ran, not a re-booking — and took a three-point 121.7% figure to 100.6% in one observation. **At n=4 a counterparty's booking is an estimate with a wide TWO-SIDED error, 37.5% to 152% observed. Plan no cascade around an assumed overrun.**
 
 ## 2. What each letter actually means
 
@@ -85,43 +90,47 @@ Completion rate for `H` / `M` / `L` by time-of-day window. Still entirely unmeas
 | 2026-09-23 | 6 | 1 | 345 | 105 | **30.4%** |
 | 2026-09-24 | 2 (snapshot-restricted) | 1 | 90 | 15 | **16.7%** |
 | 2026-09-25 | 4 | 2 | 225 | 60 | **26.7%** |
-| 2026-09-28 | 4 resolved (+1 pending) | 2 | 345 | 195 | **56.5%** |
-| **Pooled** | **20** | **9** | **1245** | **540** | **43.4%** |
+| 2026-09-28 | 5 | 3 | 360 | 210 | **58.3%** ⬆ amended |
+| **2026-09-29** | **6** | **3 + 1 partial** | **315** | **225** | **71.4%** — highest measured |
+| **Pooled** | **27** | **14** | **1575** | **780** | **49.5%** |
 
-**43% is the working figure**, and it has now moved 46.2 → 42.2 → 38.3 → **43.4** across four revisions. It is not converging. **The honest statement is "well under half, banded 17–69%." Do not hard-code 43 any more than 38 or 70.**
+⚠️ **9/28 was amended upward** (2026-09-29(I)): `ResFrac | New Update/Agenda Doc` was scored PENDING on 9/28 because its deferred 19:00–19:15 window fell after that run's 17:45 firing. On 9/29 Michael retro-filed it onto 9/28 15:15–15:30, resolving it as ran, 15 of 15. **345/195 → 360/210, 56.5% → 58.3%.** Per instrument error 5 a prior day's measurement is provisional; this is the first case where one *gained* evidence.
 
-⚠️ **Survival is bimodal per block, not a uniform haircut — now n=2 days, 9 blocks, ZERO intermediate outcomes** (2026-09-25(F), 2026-09-28(F)). 9/25: 100%, 100%, 0%, 0%. 9/28: 125%, 100%, 0%, 0%. **Size a block at its nominal length and expect it to run whole or vanish whole.** Shrinking every block to ~43% of nominal would produce a plan in which nothing is the right size. The prediction target is **which** blocks vanish, not by how much each shrinks — and §3's title split now answers that.
+**49.5% is the working figure, and it has now moved 46.2 → 42.2 → 38.3 → 43.4 → 49.5 across five revisions — in both directions twice.** It is not converging and the band has widened to **16.7–71.4%**. **The honest statement is "roughly half, banded 17–71%." Do not hard-code 49 any more than 38 or 70.**
 
-### The two splits, and what 2026-09-28 did to their ranking
+⚠️ **Survival is bimodal per block — 15 blocks, three days, ONE intermediate outcome, and that one is a decomposition** (2026-09-25(F), 2026-09-28(F), narrowed 2026-09-29(F)). 9/25: 100/100/0/0. 9/28: 125/100/0/0. 9/29: 0/0/100/100/100/**50**. The 50% is `Monthly Close Prep (...)`, 45 of 90 — **not a haircut**: Michael split it into two client-named blocks totalling 45 minutes and rolled the residue. **The partial equals the sum of its named pieces exactly.**
+
+**Rule: a block runs whole or vanishes whole UNLESS IT IS DECOMPOSED.** Size at nominal. Shrinking every block to ~49% of nominal would produce a plan in which nothing is the right size. The prediction target is **which** blocks vanish, not by how much each shrinks.
+
+### ⚠️ The title axis is CONTAMINATED — do not use it until it is re-derived
+
+| Title type (scored at the morning snapshot) | Day-rates | Favours named? |
+|---|---|---|
+| Names a deliverable | 167%, 30%, 100%, 100%, 118%, **66.7%** | 4 of 6 days |
+| Generic / topic only | 50%, 80%, 0%, 15.4%, 0%, **75.0%** | — |
+
+**2026-09-28 promoted this axis to co-equal with `verb_class` on the strength of one day that isolated it (named 118%, generic 0%). 2026-09-29 re-ran the experiment on the identical two generic blocks at the identical 180 minutes and the axis INVERTED** (2026-09-29(A)).
+
+**And the instrument is contaminated** (2026-09-29(B)). `Scanner | Updates` ran its full 90 minutes on 9/29 and Michael renamed it **`Scanner | Invoicing/Revenue Updates` at 12:07:47 — seven minutes after the block closed.** Same event id, same minutes, a title that now names its deliverable. **He retitles generic blocks into named ones once he knows what he did in them.** Every measurement before 9/29 was taken against the EOD calendar, so *"named blocks survive"* was partly reading the causation backwards.
+
+**MANDATORY FROM 2026-09-29: score a block's title AS IT STOOD IN THE MORNING SNAPSHOT, never as it stands at EOD.** The six day-rates above are so scored only for 9/29; 9/22–9/28 need re-deriving against their own snapshots before the axis can be trusted at all.
+
+**Neither of 9/29's named losses was about its title.** `Paulex | NIH Grant Research` rolled because a counterparty moved its venue; `ResFrac | New Update/Agenda Doc` vanished because the work had already happened. **On current evidence what decides a block's fate is what happens to the venue or the thread it serves, not how the block is titled.**
+
+### `verb_class`
 
 | `verb_class` | Blocks | Planned min | Logged min | **Rate** | Replicates? |
 |---|---|---|---|---|---|
-| **coordination** | 18 | 1125 | 495 | **44.0%** | **yes, n=5 days** — 50%, 30%, 44%, 27%, 56.5% |
-| **production, pre-planned** | 1 | 180 | 180 | **100%** | n=1 — first ever observed, 2026-09-28 |
+| **coordination** | 21 | 1275 | 630 | **49.4%** | **yes, n=6 days** — 50%, 30%, 44%, 27%, 58%, 89% |
+| **production** | 5 | 360 | 285 | **79.2%** | n=2 days, 4 blocks — too thin to act on |
 
-| Title type | Day-rates | Favours named? |
-|---|---|---|
-| Names a deliverable | 167%, 30%, 100%, 100%, **118%** | **4 of 5 days** |
-| Generic / topic only | 50%, 80%, 0%, 15.4%, **0%** | — |
-
-**⚠️ 2026-09-28 IS THE FIRST DAY THAT COULD SEPARATE THE TWO AXES, AND IT SEPARATED THEM IN FAVOUR OF THE TITLE** (2026-09-28(D)). All five blocks in that morning's snapshot were coordination verbs, so `verb_class` was constant and could not discriminate at all. The title axis discriminated perfectly: named-deliverable blocks kept **195 of 165 planned minutes (118%)**; generic ones kept **0 of 180 (0%)** — `Scanner | Updates` and the opaque `Monthly Close Prep (...)`, both rolled to 9/29.
-
-This runs **opposite to 2026-09-23(A)**, which separated the axes in favour of `verb_class`. Two clean separations, two different winners. **Promote the title axis to co-equal with `verb_class`; neither is the headline split.** Lesson 2026-09-02(A)'s 7-for-7 named-deliverable result is reinforced rather than merely un-refuted.
-
-### ⚠️ Production IS pre-planned — just never the evening before
-
-**This section previously read "never pre-planned — the strongest finding in the model." 2026-09-28 falsified that form of the claim and it has been rewritten** (2026-09-28(A)).
-
-`Mixmax | Pricing Plan - Excel Model` was created at **10:42 CT for a 13:45 start** — 3 h 03 m ahead of its own window, so it passes the plan test — ran, was **extended in flight** at 16:09 from 15:45 to 16:45, and logged **180 of 180 minutes**. It is client-analysis production, not internal work. It is the first such block in the corpus.
-
-**The surviving, narrower claim:** across five days Michael has pre-planned zero client-production blocks **in the previous evening's EOD burst**. What he does is plan production **same-day, hours ahead** — and when he does, **it wins**: both coordination blocks it collided with were rolled to 9/29 rather than the production block being cut.
-
-**SCHEDULER RULE — REPLACED.** The old rule was *never propose production*. It produced the wrong answer on its first test: the 9/28 morning run, obeying it, proposed 45 minutes of `1L` coordination into 13:30–14:15, and Michael filled that exact window with 180 minutes of production. Right window, wrong verb class — the mirror image of 9/25's error. **The new rule is: propose the window, name the artifact, and do not encode verb class as a scheduler rule at n=5.** The agent has predicted the right window repeatedly and the right content never.
+⚠️ **"Production is never pre-planned the evening before" is DELETED.** That narrowing was written on 9/28 and falsified within four hours: `Mixmax | Pricing Plan - Excel Model` was created **21:45:16 on 9/28 for a 13:15 start on 9/29**, 15 h 30 m ahead. It ran — shifted to 15:30 after Jason Tatum's 13:35 inbound evacuated its original window — and logged its full nominal 60 exclusive minutes. **Production is pre-planned, at any horizon, and when it runs it runs whole.**
 
 **Scheduler rules from this section:**
-1. Size a block at **nominal**, and expect it to run or vanish (not to shrink).
-2. **Anchor it to the venue that forces it.** ⚠️ Still **weakly supported** (2026-09-25(D)) — its single supporting observation was re-filed onto another day. Not falsified; no live evidence.
-3. **Prefer a title that names its artifact.** This is now the best-supported single lever in the model: 4 of 5 days, and the only day that isolated it gave 118% against 0%.
+1. Size a block at **nominal**, and expect it to run or vanish — not to shrink, unless it is decomposed.
+2. **Anchor it to the venue that forces it.** ✅ **SUPPORTED at n=1** (2026-09-29(D)), promoted from *weakly supported, no live evidence*. Anh Le moved `Paulexbio <> Attivo Sync` to 9/30 at 09:15:08; Michael moved its prep block `Paulex | NIH Grant Research` to 9/30 at 13:56:12, preserving the ahead-of-meeting relationship. **Corollary: when a counterparty moves a meeting, look for a prep block anchored to it before treating the freed window as capacity.**
+3. ~~Prefer a title that names its artifact.~~ **SUSPENDED** — see the contamination warning above. Do not encode it as a scheduler rule until the axis is re-derived against morning snapshots.
+4. **Do not encode `verb_class` as a scheduler rule at n=6.** The *never propose production* rule was deleted on 9/28 after producing the wrong answer on its first test. Propose the window and name the artifact; leave the verb to Michael.
 
 ## 4. Switching cost
 
@@ -129,49 +138,68 @@ Seed rule: **maximum five distinct client contexts per day**, batched contiguous
 
 | Contexts in day | Days | Completion (minutes basis) |
 |---|---|---|
+| **5** | 1 | **71.4%** — the best day measured |
 | 4 (+1 internal) | 1 | 79% |
 | 3 (+1 internal) | 1 | 27% |
-| 2 (+1 internal) | 3 | 30%, 17%, **56.5%** |
+| 2 (+1 internal) | 3 | 30%, 17%, 58.3% |
 
-**Five days, no relationship — and 9/28 makes the null result sharper**: the same context count (2 + 1 internal) has now produced both the worst and the second-best day in the corpus. Contiguity has been violated on all five with no measurable cost. **Context count is not predictive of anything, and the seed limit of five has never been approached.**
+⚠️ **The seed cap of five was reached for the first time on 2026-09-29 — and that was the highest-survival day in the corpus.** Six contexts were planned (Mixmax, Scanner, ResFrac, Paulex, DeepScribe, Kestrel), five carried logged minutes, and Mixmax was non-contiguous across a five-hour gap. **Six days, no relationship in either direction. Context count is not predictive of anything, and the cap is refuted rather than merely un-approached.** Keep G5 as a reporting line, not as a constraint on the scheduler.
 
 ## 5. Roll history
 
 A task at three rolls stops being silently re-planned and becomes a flag (engine rule 9).
 
-⚠️ `rolls:` has never been readable or writable — it is an Asana fenced-block field. **0 increments across twelve runs, against 7 directly observed rolls.**
+⚠️ `rolls:` has never been readable or writable — it is an Asana fenced-block field. **0 increments across fourteen runs, against 10 directly observed rolls.**
 
 | Block / workstream | Observed rolls | Status |
 |---|---|---|
-| `Client/Double Review (...)` (`7u71d6h0k1grovgju1jgeao76c`) | **3, final** | **DELETED 2026-09-25** at its fourth placement — `get_event` returns *deleted*. **Rule 9's "cut it" is a real disposal mode**, reached by Michael independently |
-| `Scanner \| Updates` (`5k3hffa1uap4kj2p0h3qfho3u9`) | **2** (9/25→9/28, 9/28→9/29) | **One below the flag threshold.** Evacuated by Mixmax on both. Re-placed 9/29 09:00–10:30 |
-| `Monthly Close Prep (...)` (`07b3d937if5c2v2dljba475qvf`) | **1** (9/28→9/29) | Re-placed 9/29 13:15–14:45. Title still opaque; may or may not be `Client/Double Review`'s successor |
+| `Monthly Close Prep (...)` (`07b3d937if5c2v2dljba475qvf`) | **2** (9/28→9/29, 9/29→9/30) | ⚠️ **One below the flag threshold**, third placement already booked 9/30 15:15–16:15, shrunk 90→60. **No longer opaque** — decomposed in arrears on 9/29 into Scanner (15 min) + DeepScribe (30 min) |
+| `Paulex \| NIH Grant Research` (`1co6khjiailhcme08eqg5okatk`) | **1** (9/29→9/30) | **Rolled WITH its venue**, not displaced — see §7 |
+| `Scanner \| Updates` → `Scanner \| Invoicing/Revenue Updates` (`5k3hffa1uap4kj2p0h3qfho3u9`) | **2, frozen** | ✅ **RAN 9/29**, 90 of 90, two invoicing emails. Rule 9 stood down at the last placement before the threshold |
+| `Client/Double Review (...)` (`7u71d6h0k1grovgju1jgeao76c`) | **3, final** | **DELETED 2026-09-25** at its fourth placement. **Rule 9's "cut it" is a real disposal mode**, reached by Michael independently |
 | `Scanner \| Close: Aug Revenue` | 5 (as of 2026-09-15) | past threshold; unverifiable until the connector returns |
-| Mixmax audit backup `C-20260917-05` · DeepScribe/Tabs `C-20260910-05` | **n/a — never placed** | **Worse than rolled.** Seven days flagged, zero blocks ever created. A never-placed item cannot roll, so the roll instrument is blind to the model's two most overdue items |
+| Mixmax audit backup `C-20260917-05` · DeepScribe/Tabs `C-20260910-05` | **n/a — never placed** | **Worse than rolled.** Nine days flagged, zero blocks ever created. A never-placed item cannot roll, so the roll instrument is blind to the model's two most overdue items |
 
-**Rolls are written when the displacing work takes the window — usually, but NOT always, in the EOD burst** (revised 2026-09-28(G); was "at EOD" at n=3). On 9/28 both rolls were written mid-afternoon, in flight: `Monthly Close Prep` at 15:07 CT and `Scanner | Updates` at 16:10 CT, each at the moment the overrunning Excel Model block took its slot, and both **before** `INBOX Review`.
+**Rolls are written when the displacing work takes the window** — usually, but not always, in the EOD burst. On 9/28 both were written mid-afternoon in flight; on 9/29 one at 13:56 (following a venue move) and one at 17:13. **None has ever been written inside `INBOX Review`.**
 
-**Consequence for the 4:15 PM EOD Planner:** tomorrow's free windows are still provisional, but on a day with a mid-afternoon collision **some rolls are already visible at 4:15 PM**. Read the calendar; do not assume they cannot be there.
+**Consequence for the 4:15 PM EOD Planner:** tomorrow's free windows are provisional, but **some rolls are already visible at 4:15 PM on most days**. Read the calendar; do not assume they cannot be there.
 
 ## 6. Tag-prediction accuracy
 
 | | Proposed | Unchanged by MC | Corrected | Accuracy |
 |---|---|---|---|---|
-| Number | 4 | 0 | 0 | **unmeasurable** |
-| Letter | 4 | 0 | 0 | **unmeasurable** |
+| Number | 5 | 0 | 0 | **unmeasurable** |
+| Letter | 5 | 0 | 0 | **unmeasurable** |
 
-⚠️ This stream cannot open until the EOD Planner runs once and Michael sets a real tag against an agent proposal. **No agent proposal has ever been taken up**, and the EOD Planner has still never fired — not on its 2026-09-25 go-live day, not since.
+⚠️ This stream cannot open until the EOD Planner runs once and Michael sets a real tag against an agent proposal. **No agent proposal has ever been taken up**, and the EOD Planner has still never fired.
 
-**What is scoreable is the agent's own target selection, and it is the bigger error by far — six consecutive misses:**
+**What is scoreable is the agent's own target selection — seven consecutive misses, and 9/29 localised the error to one dimension:**
 
-- 9/23: `3H` (165 min) into a 120-minute window — violated G1 before Michael saw it; the deliverable took ~30 min.
-- 9/24: `2H` into a 105-minute window (G1-conforming) — not taken; wrong deliverable.
-- 9/25: `2M` into 90 of a 120-minute hold — not taken. Right client, right window, **wrong verb class**.
-- 9/28: `1L` coordination into the day's only free window — **the window was right, and Michael filled it at 13:45.** He filled it with 180 minutes of production. **Wrong verb class again, with the sign inverted.**
+| Day | Proposed | Result |
+|---|---|---|
+| 9/23 | `3H` (165 min) into a 120-minute window | violated G1 before Michael saw it; the deliverable took ~30 min |
+| 9/24 | `2H` into a 105-minute window | not taken; wrong deliverable |
+| 9/25 | `2M`, right client, right window | **wrong verb class** |
+| 9/28 | `1L` coordination into the day's only free window | **right window**, filled with 180 min of production — wrong verb class, sign inverted |
+| **9/29** | **`1L`, reply to Jennifer confirming the $14.8–15.0k range, into the only free window** | ⚠️ **client HIT, counterparty HIT, thread MISS.** Michael wrote to Jennifer twice that day and never touched the pricing thread. The free window went unused |
 
-**THE RULE, AT n=5: TARGET THE NEWEST LIVE THREAD — not the nearest deadline, not an older live thread.** It held again on 9/28: Jason Tatum's 9/25 12:04 Gen 2 ask took **330 of the day's 375 logged self-scheduled minutes**.
+### ⚠️ THE RULE, REPLACING "TARGET THE NEWEST LIVE THREAD": ANSWERABILITY SELECTS THE THREAD
 
-⚠️ **But the rule predicts the CLIENT and the TOPIC, not whether the output is a message or a file** (2026-09-28(C)). Michael spent five hours inside Jason's thread and **posted nothing to `#attivo-mixmax` all day**; the ask stands unanswered at 2 business days. Use thread recency to choose the client and the window. Never infer from it that the block's output will be correspondence, and never let "the thread got minutes" clear a flag that says "the counterparty is still owed a reply."
+On 2026-09-29 five asks were live. Michael answered four and deferred one, and the ordering is not recency (2026-09-29(C)):
+
+| Ask | Latency | What it asks for |
+|---|---|---|
+| Jason — *"fix this file and resend"* | **19 m 41 s** | a mechanical correction |
+| Jennifer — PEO Q2, Nov 1 timing | **45 m 50 s** | a one-line judgement from knowledge |
+| Anh — Kestrel DE tax estimate | **5 h 01 m** | review-and-approve someone else's work |
+| Jennifer — PEO Q1, GAAP treatment | **17 h 58 m** | an explanation from knowledge |
+| **Jennifer — *"is $14,800–$15,000 a reasonable monthly range?"*** | **27 h +, UNREAD** | **a number he must commit his firm to** |
+
+The deferred one is the **oldest**, from the **fastest-responding counterparty in the corpus** (1 h 49 m), **starred**, and from the person he answered twice that day.
+
+**He answers what he can answer from knowledge in one or two lines, roughly in arrival order. He defers what commits his firm to a price.** *Newest live thread* survives only as a predictor of **client**, which is where it has always been right. **At n=1 this is a hypothesis with a scheduled test: if the pricing question is answered on 9/30 while other one-line asks turn around inside a day, delete it.**
+
+⚠️ **CHANNEL SILENCE IS A MEDIUM PREFERENCE, NOT UNRESPONSIVENESS.** On 9/29 Jason posted *"I just sent you an email"* in `#attivo-mixmax` at 13:40:31; Michael replied **by email at 13:54:55** and posted nothing to the channel, which now stands at 4 business days silent. **Never count channel staleness as an unanswered-counterparty flag when the same counterparty was answered in another medium the same day.** Flag the *ask*, not the channel — Jason's substantive 9/25 Gen 2 ask is genuinely unanswered at 3 bd, and that is the flag that belongs in the list.
 
 **A displacement proposal is already stale if a counterparty posted after it was written.**
 
@@ -181,62 +209,69 @@ A task at three rolls stops being silently re-planned and becomes a flag (engine
 
 ## 7. Counterparty volatility and refill
 
-| Disposal mode | 9/22 | 9/23 | 9/24 | 9/25 | 9/28 | Note |
-|---|---|---|---|---|---|---|
-| Cancelled by counterparty | 1 | 1 | 1 | 0 | 0 | |
-| Moved by counterparty | 1 | 0 | 0 | 0 | 0 | |
-| Deleted by Michael (containers) | 2 | 2 | 3 | 1 | 0 | |
-| Moved within the day by Michael | — | — | 3 | 4 | **6** | highest measured |
-| Evacuated by a competing client | 1 | 1 | 0 | 1 | 0 | |
-| **Evacuated by the SAME client's other work** | — | — | — | — | **2** | **new** — both rolls caused by one Mixmax production block |
-| Rolled forward by Michael | 0 | 2 | 1 | 1 | **2** | on 9/28 written mid-afternoon, not at EOD |
-| Retro-filed onto a prior day | 0 | 1 | 0 | 0 | 0 | **does not replicate** — 1 for 4 |
-| Retro-filed onto a LATER day | — | — | — | 1 | 0 | |
-| Disposed by scheduling a meeting | 0 | 0 | 1 | 0 | **1** | 9/28: the PaulexBio NIH question |
-| Deleted outright at the roll threshold | 0 | 0 | 0 | 1 | 0 | see §5 |
-| **Deferred past 17:00 within the day** | — | — | — | — | **2** | **new** — `INBOX Review` → 18:30, `ResFrac` → 19:00 |
+| Disposal mode | 9/22 | 9/23 | 9/24 | 9/25 | 9/28 | **9/29** | Note |
+|---|---|---|---|---|---|---|---|
+| Cancelled by counterparty | 1 | 1 | 1 | 0 | 0 | 0 | |
+| Moved by counterparty | 1 | 0 | 0 | 0 | 0 | **1** | Anh Le moved the Paulexbio sync to 9/30 |
+| Deleted by Michael (containers) | 2 | 2 | 3 | 1 | 0 | 0 | |
+| Moved within the day by Michael | — | — | 3 | 4 | 6 | **8** | **new maximum** |
+| Evacuated by a competing client | 1 | 1 | 0 | 1 | 0 | 0 | |
+| **Evacuated by the SAME client's other work** | — | — | — | — | 2 | **1** | replicates — Jason's inbound fix-request displaced the Mixmax Excel Model block |
+| Rolled forward by Michael | 0 | 2 | 1 | 1 | 2 | **2** | |
+| **Rolled WITH its venue** | — | — | — | — | — | **1** | **new** — the prep followed the meeting, not a lost contest. §3 rule 2 |
+| Retro-filed onto a prior day | 0 | 1 | 0 | 0 | 0 | **1** | ⚠️ **REPLICATES** — 2 of 6 days, no longer "does not replicate" |
+| Retro-filed onto a LATER day | — | — | — | 1 | 0 | 0 | |
+| Disposed by scheduling a meeting | 0 | 0 | 1 | 0 | 1 | 0 | |
+| Deleted outright at the roll threshold | 0 | 0 | 0 | 1 | 0 | 0 | see §5 |
+| **Decomposed in arrears** | — | — | — | — | — | **1** | **new** — the only source of a partial survival, §3 |
+| Deferred past 17:00 within the day | — | — | — | — | 2 | **2** | |
 
-⚠️ **Block disposal is not primarily counterparty-driven.** Pooled: **5 of 36.** On 9/28 it was **entirely** self-inflicted — one client's production block displaced that same client's coordination block and an internal one.
+⚠️ **Block disposal is not primarily counterparty-driven.** Pooled: **6 of 44.**
 
-**Discharge-by-meeting** (2026-09-24(F)), **narrowed 2026-09-25(L):** when a flagged item acquires a dated venue **with the counterparty in it**, it stops being overdue. **A solo prep block does not discharge anything.** Confirmed twice more on 9/28: the Kestrel bi-weekly ran at 12:15 and closed Kestrel; the PaulexBio NIH scope question acquired `Paulexbio <> Attivo Sync` (9/29 11:00, Justin Vogel in the room) within 4 h 21 m of arriving.
+**Discharge-by-meeting** (2026-09-24(F)), **narrowed 2026-09-25(L):** when a flagged item acquires a dated venue **with the counterparty in it**, it stops being overdue. **A solo prep block does not discharge anything.** Confirmed again 9/29: ResFrac at 8 business days was discharged by the 12:00 weekly check-in with Tristen, Carl, Garrett and aperez in the room.
 
-⚠️ **ARRIVAL RECENCY BEATS DEADLINE PROXIMITY EVEN WHEN THE ARRIVING ITEM HAS NO DATE AND NO OWNER** — now n=2 (2026-09-25, 2026-09-28(J)). Miguel Sanjuan's undated grant-scope question got a 30-minute research block and a next-day venue inside four and a half hours, on the seventh consecutive day the 9/30-dated Mixmax audit backup got zero minutes. **This is the model's most reliable predictor of where a day's minutes go, and the scheduler cannot fix it — only the flag list can.**
+⚠️ **ARRIVAL RECENCY BEATS DEADLINE PROXIMITY EVEN WHEN THE ARRIVING ITEM HAS NO DATE AND NO OWNER** — n=3 (2026-09-25, 2026-09-28(J), 2026-09-29). On the best day ever measured, five clients got minutes and **the 9/30-dated Mixmax audit backup got zero for the ninth consecutive day.** **This is the model's most reliable predictor of where a day's minutes go, and the scheduler cannot fix it — only the flag list can.**
 
-**Refill: freed time is filled by re-pointing a block that already exists somewhere on the same day.** Latency 52–59 min at n=3. Not re-measured 9/25 or 9/28 — on 9/28 nothing was freed; the day was over-filled rather than vacated.
+**Refill: freed time is filled by re-pointing a block that already exists somewhere on the same day.** Latency 52–59 min at n=3, not re-measured since 9/24.
 
 ⚠️ **Size a capture block to the vacancy plus the soft time abutting it** (2026-09-24(E)). Declined, tentative and externally-organised blocks are not occupied time.
 
-⚠️ **Focus blocks move in both directions**, and on 9/28 they moved **later within the day past 5:00 PM** rather than to another date — a third direction. The corpus rule that focus blocks move only later is narrowed to client analysis displaced by incoming client work.
+⚠️ **Focus blocks move in both directions and in three senses** — to another date, later within the day past 5:00 PM, and **earlier within the day** (new 9/29: `Mixmax | PEO Follow-up` moved 11:30 → 09:30 and ran there). The corpus rule that focus blocks move only later is dead.
 
 ---
 
 ## Known instrument errors
 
-Six measurement hazards that would otherwise corrupt this model silently.
+Seven measurement hazards that would otherwise corrupt this model silently.
 
-1. **Retroactive blocks are work logs, not plans — the test is `updated` vs `end`, NOT `created` vs `start`** (revised 2026-09-25(C)). **An event whose last `updated` stamp post-dates its own `end` is retroactively placed and cannot be scored for plan adherence, however old its `created`.** On 9/23 five of eleven executed blocks were logs; on 9/24, four of seven; on 9/25, four of ten; on 9/28, one of seven (`Paulex | NIH Grant Research`, created 15:43 onto a 13:45–14:15 window). **A block created *during* its own window is in-flight — treat it as a log, and say so.** ⚠️ **The test must be applied to the block's position AT THE MOMENT IT IS SCORED, not to its current stamp** — a block that ran and was then re-timed within the same day will fail the naive test although it was a genuine plan (see error 5).
+1. **Retroactive blocks are work logs, not plans — the test is `updated` vs `end`, NOT `created` vs `start`** (revised 2026-09-25(C)). **An event whose last `updated` stamp post-dates its own `end` is retroactively placed and cannot be scored for plan adherence, however old its `created`.** Counts: 9/23 five of eleven, 9/24 four of seven, 9/25 four of ten, 9/28 one of seven, 9/29 **three pure logs plus one in-flight**.
+   - **A block created *during* its own window is in-flight — treat it as a log, and say so.** 9/29's `Mixmax | Cash Flow Review` (created 17:32:09 onto 17:30–18:00) is the clean case. ⚠️ `prompts/evening-evaluation.md` STEP 3's two-row table has no row for this and was amended 2026-09-29 to match; **where a routine prompt and this note disagree on an instrument, this note is the later and better-evidenced document** (2026-09-29(J)).
+   - ⚠️ **Apply the test to the block's position AT THE MOMENT IT IS SCORED, not to its current stamp.** A block that ran and was then re-timed within the same day fails the naive test although it was a genuine plan. **Anchor to the 07:30 snapshot: a block present there with `created` before its start is a plan, whatever happens to its stamps afterwards.**
 
-2. **A retro block dates the work, not the output.** The correspondence lands *later* than the block's own window — 27 minutes later on 9/25. A same-window search returns a false negative.
+2. **A retro block dates the work, not the output.** The correspondence lands *later* than the block's own window — **n=5, range 8 min to 3 h 45 m** (8 min 9/04, 27 min 9/25, 33 min and 1 h 25 m 9/29, 3 h 45 m 9/21). The send **always follows** the block, never precedes it. **Search forward from the block's end to the end of the next admin anchor; a same-window search returns a false negative.**
 
-3. **Classify a burst by the dates it writes — per block, because a burst can be MIXED** (revised 2026-09-25(I)). A **log-burst** re-times *today* and follows an outbound message (latencies 13 s to 3 m 24 s across 6 bursts). A **plan-burst** writes *future* dates.
-   ⚠️ **The plan-burst does NOT reliably sit inside `INBOX Review + Next Day Planning`** — falsified 2026-09-28(H) after holding at n=3. On 9/28 Michael re-timed his day in **five** bursts (12:48, 15:07, 15:42–15:48, 16:09–16:10, 16:51–16:52 CT), **none** inside the anchor, and then moved the anchor itself from 16:30 to **18:30–19:00**. The anchor is where planning lands on a quiet afternoon; on a day with a mid-afternoon collision, planning is distributed across the collision points. **Search the whole day, not the anchor.**
-   Also: sort by start and subtract pairwise overlap before summing logged minutes, and report the overlap. **Trust a tidy log's sequence, not its durations.**
+3. **Classify a burst by the dates it writes — per block, because a burst can be MIXED** (revised 2026-09-25(I)). A **log-burst** re-times *today* and follows an outbound message. A **plan-burst** writes *future* dates. 9/29's 12:07–12:10 burst was mixed: six re-times of today plus one plan-write for tomorrow.
+   ⚠️ **The plan-burst does NOT sit inside `INBOX Review + Next Day Planning`** — falsified 2026-09-28(H), replicated 9/29 (seven bursts, none inside an anchor). **Search the whole day.**
+   Also: **sort by start and subtract pairwise overlap before summing logged minutes, and report the overlap.** Trust a tidy log's sequence, not its durations.
 
-4. **A block missing from today may have migrated in either direction — match on event id, never on title or absence** (2026-09-23(G), 2026-09-24(G)). On 9/28 both "missing" blocks had **rolled to 9/29**, not been deleted. ⚠️ **Use the FULL event id**: a truncated id (`07b3d937` for `07b3d937if5c2v2dljba475qvf`) returns *"could not be found or has been deleted"* — indistinguishable from a real deletion, and a false positive for the disposal table.
+4. **A block missing from today may have migrated in EITHER direction — match on event id, never on title or absence** (2026-09-23(G), 2026-09-24(G), reinforced 2026-09-29(I)). On 9/29 the "missing" `ResFrac | New Update/Agenda Doc` had moved **backwards onto 9/28**, and was found only by a targeted `fullText` query on the prior day. ⚠️ **Use the FULL event id**: a truncated id returns *"could not be found or has been deleted"* — indistinguishable from a real deletion.
 
-5. **A scored block's calendar position is mutable after the run that scored it** (2026-09-25(D)). **Per-block minutes are provisional; anchor durable measurements to send timestamps and Doc `createdTime`s, which do not move.** When a prior day's measurement loses its supporting event, demote the rule it supported rather than deleting or defending it.
+5. **A scored block's calendar position is mutable after the run that scored it** (2026-09-25(D)). **Per-block minutes are provisional; anchor durable measurements to send timestamps, which do not move.** A prior measurement can lose its supporting event — or, as on 9/29, **gain one**: re-score it and say so rather than defending or deleting the rule it supported.
 
-6. **⚠️ NEW — client work product is structurally invisible, so a production block's output can never be observed** (2026-09-28(K)). The Google Drive connector authenticates as `michael.p.christopher@gmail.com`, **not** the Attivo Workspace account: a full-day `modifiedTime` sweep on 9/28 returned only the agent's own two run docs and two personal files, and Jason's shared Gen 2 doc returns *"Requested entity was not found."* `Mixmax | Pricing Plan - Excel Model` logged 180 minutes and produced no observable artifact — **an instrument limit, not a null result.** Record production output as **unobservable**, exactly as Suralink, Rippling, Ramp and the portal layer already are. **Never score a production block as having produced nothing**, and never let the absence of an artifact count as evidence against a production measurement.
+6. **Client work product is structurally invisible, so a production block's output can never be observed** (2026-09-28(K)). The Google Drive connector authenticates as `michael.p.christopher@gmail.com`, **not** the Attivo Workspace. Full-day sweeps on 9/28 and 9/29 returned only the agent's own run docs and Michael's personal files. **Record production output as unobservable, exactly as Suralink, Rippling, Ramp and the portal layer are. Never score a production block as having produced nothing.**
+
+7. **⚠️ NEW — the umbrella block: a late-day extension can swallow other blocks, and its face duration double-counts them** (2026-09-29). `Mixmax | Pricing Plan - Excel Model` was extended at 17:33:01 to 15:30–18:00 — **150 face minutes** — and overlaps **90 minutes** of other logged blocks (`DeepScribe | Monthly Close Prep` 15, `Kestrel | DE Tax Review` 15, `INBOX Review` 30, `Mixmax | Cash Flow Review` 30). **Its exclusive minutes are 60, exactly its nominal planned size.** Taking the face duration would have scored it at 250% and moved pooled survival by nine points on one block. **When an extended block contains other named blocks, its EXCLUSIVE minutes are the honest figure** — error 3's overlap rule applied to the block being scored rather than to its neighbours.
 
 ---
 
-*Lineage: seeded 2026-09-21 from the ACA v4 specification §6 and §8, cross-checked against the `[ACA]` corpus in [[Open Brain]]. Measurements 2026-09-22 to 2026-09-28 from calendar `created`/`updated` stamps diffed against each day's 7:30 AM and 12:30 PM snapshots and reconciled against Gmail sent, Slack read by channel id, and Drive. Asana has been unavailable on all twelve runs, so §1, §2, §5 and §6 remain unmeasured; the EOD Planner has never run, so no agent-authored agenda has ever been scored.*
+*Lineage: seeded 2026-09-21 from the ACA v4 specification §6 and §8, cross-checked against the `[ACA]` corpus in [[Open Brain]]. Measurements 2026-09-22 to 2026-09-29 from calendar `created`/`updated` stamps diffed against each day's 7:30 AM snapshot and reconciled against Gmail sent, Slack read by channel id, and Drive. Asana has been unavailable on all fourteen runs, so §1, §2, §5 and §6 remain unmeasured; the EOD Planner has never run, so no agent-authored agenda has ever been scored.*
 
 **Revisions** (last ten)
 
 - 2026-09-21 — created, seeded with v4 priors. No measurements.
 - 2026-09-22 — first measured values. §3 populated (n=1) and minutes-weighted columns added. §4 first row. New §7. Third instrument error added.
 - 2026-09-23 — second measured day. `verb_class` replaces named/generic as §3's headline split. New §0. Containers excluded from the denominator. 70% cap superseded by 46.2%. §5 gains the EOD roll-burst finding. §6 gains the first scoreable sizing error. §7 narrowed; fourth instrument error added.
-- 2026-09-24 — third measured day. Coordination replicates at 43.2%; the title split flips a third time. Pooled 46.2% → 42.2%. §6's thread-velocity rule promoted to n=3. New §6 warning: a parameter read but not applied is not part of the engine. §5 puts `Client/Double Review` at the threshold. §7 gains discharge-by-meeting, tightens refill to 52–59 min, adds the soft-time-overflow rule. Instrument error 3 split into log- and plan-bursts; error 4 widened.
-- 2026-09-25 — fourth measured day, and the first on which a prior measurement was withdrawn. Pooled survival 42.2% → 38.3%; coordination 43.2% → 38.5%. The 140% production row deleted and replaced by "production is pre-planned on 0 of 4 days" plus the rule *never propose production*. §3 gains the bimodal-survival warning; scheduler rule 2 demoted. §1 externally-organised overrun 117% → 121.7%. §5: `Client/Double Review` deleted at its fourth placement. §6 restated as newest-live-thread, n=4. Instrument error 1 rewritten around `updated` vs `end`; error 3 gains the mixed-burst case; new error 5.
-- 2026-09-28 — **fifth measured day, and the first on which the model's strongest claim was falsified.** Pooled survival 38.3% → **43.4%**; coordination 38.5% → **44.0%** (band 27–57%). **"Production is never pre-planned" narrowed to "never pre-planned the evening before" after the first genuinely pre-planned client-production block (180 of 180 min), and the rule *never propose production* DELETED** — it produced the wrong answer on its first test, the exact mirror of 9/25's error. **The title axis promoted to co-equal with `verb_class`** after the first day that could isolate it (named 118%, generic 0%, verb_class constant). §3 bimodality upgraded to n=2 / 9 blocks / 0 intermediate outcomes. §5 roll-timing softened from "at EOD" to "when the displacing work takes the window." §6 newest-live-thread at n=5, narrowed to predict client and topic but not output form; sixth consecutive agent proposal untaken. §7 gains three disposal modes (same-client evacuation, deferral past 17:00, meeting-disposal) and the undeadlined-ask finding at n=2. **Instrument error 3's plan-burst-in-`INBOX Review` claim falsified; error 4 gains the truncated-event-id false positive; new error 6: client work product is invisible to the Drive connector.**
+- 2026-09-24 — third measured day. Coordination replicates at 43.2%; the title split flips a third time. Pooled 46.2% → 42.2%. §6's thread-velocity rule promoted to n=3. §5 puts `Client/Double Review` at the threshold. §7 gains discharge-by-meeting and the soft-time-overflow rule. Instrument error 3 split into log- and plan-bursts; error 4 widened.
+- 2026-09-25 — fourth measured day, and the first on which a prior measurement was withdrawn. Pooled 42.2% → 38.3%. The 140% production row deleted and replaced by *never propose production*. §3 gains the bimodal-survival warning; scheduler rule 2 demoted. §1 overrun 117% → 121.7%. §5: `Client/Double Review` deleted at its fourth placement. §6 restated as newest-live-thread, n=4. Instrument error 1 rewritten around `updated` vs `end`; new error 5.
+- 2026-09-28 — fifth measured day, and the first on which the model's strongest claim was falsified. Pooled 38.3% → 43.4%. *"Production is never pre-planned"* narrowed to *"never the evening before"*; **the rule *never propose production* DELETED**. The title axis promoted to co-equal with `verb_class`. §3 bimodality at n=2 / 9 blocks. §5 roll-timing softened. §6 newest-live-thread narrowed to client and topic. §7 gains three disposal modes. Instrument error 3's plan-burst claim falsified; new error 6.
+- **2026-09-29 — sixth measured day. The best day on both axes (71.4%, 5 emails + 1 Slack) and the day the title axis broke.** Pooled **43.4% → 49.5%**, band widened to 16.7–71.4%; coordination 44.0% → **49.4%**. **9/28 amended upward to 58.3%** after `ResFrac | New Update/Agenda Doc` resolved by retro-filing. **The title axis DEMOTED from co-equal to CONTAMINATED** — it inverted (generic 75%, named 66.7%) and Michael was caught renaming a generic block to a named one seven minutes after it closed; **titles are now scored at the morning snapshot only, and scheduler rule 3 is SUSPENDED**. *"Production never pre-planned the evening before"* **deleted** — falsified within four hours of being written. **Scheduler rule 2 PROMOTED to supported at n=1** (a prep block followed its venue to the next day). §1's 121.7% overrun collapsed to **100.6%** and *"treat a booking as a floor"* **withdrawn**. §3 bimodality narrowed to admit the decomposition exception (15 blocks, one partial). §4's five-context cap reached for the first time, on the best day — **refuted, not merely un-approached**. §5: `Scanner | Updates` frozen at 2 rolls having run; `Monthly Close Prep` to 2 and no longer opaque. §6's *newest live thread* **replaced by answerability**, and channel silence reclassified as medium preference. §7 gains *rolled with its venue*, *decomposed in arrears*, and the replication of retro-filing onto a prior day. Instrument error 1 gains the in-flight row and the snapshot anchor; error 2 at n=5; **new error 7, the umbrella block**.
